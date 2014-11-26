@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Choose Game Mode</title>
+
+<!-- Built by @dude_greg -->
+
+<style>
+* {
+	line-height: none;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+		background: url("./html/images/game_selection_bg.jpg") no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover; 
+		font-family: Helvetica, sans-serif;
+	}
+
+	.container {
+		height: 70px;
+		margin: 50px;
+		float:left;
+		background-color: #41BEFF;
+		background-image: -o-linear-gradient(-90deg , rgb(236,236,236) 0%, rgb(147,147,147) 100%);
+		background-image: -moz-linear-gradient(-90deg , rgb(236,236,236) 0%, rgb(147,147,147) 100%);
+		background-image: -webkit-linear-gradient(-90deg , rgb(236,236,236) 0%, rgb(147,147,147) 100%);
+		background-image: -ms-linear-gradient(-90deg , rgb(236,236,236) 0%, rgb(147,147,147) 100%);
+		background-image: linear-gradient(-90deg , rgb(236,236,236) 0%, rgb(147,147,147) 100%);
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		box-shadow: 0px 1px 0px 0 #fff inset, 0 1px 2px 0 rgba(0,0,0,.8);
+		-moz-box-shadow: 0px 1px 0px 0 #fff inset, 0 1px 2px 0 rgba(0,0,0,.8);
+		-webkit-box-shadow: 0px 1px 0px 0 #fff inset, 0 1px 2px 0 rgba(0,0,0,.8);
+	}
+	
+	.left {
+		float: left;
+		box-shadow: 0 1px 0 0 rgba(255,255,255,.6), 0 1px 2px rgba(0, 0, 0, 0.75) inset;
+		-moz-box-shadow: 0 1px 0 0 rgba(255,255,255,.6), 0 1px 2px rgba(0, 0, 0, 0.75) inset;
+		-webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,.6), 0 1px 2px rgba(0, 0, 0, 0.75) inset;
+		border-radius: 40px;
+		-moz-border-radius: 40px;
+		-webkit-border-radius: 40px;
+		background-color: #41BEFF;
+		background-image: -o-linear-gradient(-90deg , rgb(165,206,88) 0%, rgb(113,142,58) 100%);
+		background-image: -moz-linear-gradient(-90deg , rgb(165,206,88) 0%, rgb(113,142,58) 100%);
+		background-image: -webkit-linear-gradient(-90deg , rgb(165,206,88) 0%, rgb(113,142,58) 100%);
+		background-image: -ms-linear-gradient(-90deg , rgb(165,206,88) 0%, rgb(113,142,58) 100%);
+		background-image: linear-gradient(-90deg , rgb(165,206,88) 0%, rgb(113,142,58) 100%);
+		width: 50px;
+		height: 50px;
+		margin: 10px;
+	}
+	
+	.left span {
+		display: block;
+		text-align: center;
+		padding-top: 12px;
+		font-weight: bold;
+		font-size: 42px;
+		color: #D9D9D9;
+		text-shadow: 0px 1px 1px rgba(0,0,0,1);
+		cursor: default;
+		line-height: 24px;
+	}
+	
+	.right {
+		box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2) inset, -1px 0 0 0 rgba(255, 255, 255, 0.3) ;
+	    float: right;
+	    height: 43px;
+	    padding-top: 27px;
+	    text-align: center;
+	    width: 350px;
+	    display: block;
+	    text-decoration: none;
+	}
+	
+	.right:hover {
+		background: rgba(0,0,0,.05);
+	}
+	
+	.right span {
+		font-size: 24px;
+		line-height: 20px;
+		color: #333;
+		font-weight: bold;
+		text-shadow: 0 1px 0 rgba(255,255,255,.8)
+		
+	}
+</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="left">
+			<span>{{userCountFb}}</span>
+		</div>
+		
+		<a href="./create_fb_game" class="right">
+			<span>MultiPlayer Play with Friends</span>
+		</a>
+	</div>
+
+	<div class="container">
+		<div class="left">
+			<span>{{userCountGeneral}}</span>
+		</div>
+		
+		<a href="./game" class="right">
+			<span>Randomly Pairs Users</span>
+		</a>
+	</div>
+
+</body>
+</html>

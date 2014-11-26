@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Tic Tac Toe Multiplayer</title>
+
+<script type="text/javascript" >
+	//game params
+	var pool_id="{{pool_id}}";
+</script>
+
+<script src="./html/js/jquery-1.10.1.min.js"></script>
+<script src="./html/js/jquery-migrate-1.2.1.min.js"></script>
+
+<link rel="stylesheet" href="./html/css/game.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="./html/css/gameUi.css" type="text/css" media="screen" /> 
+<script type="text/javascript" src="./html/js/game.js"></script>
+<script type="text/javascript" src="./html/js/gameUi.js"></script>
+
+  <link rel="stylesheet" href="./html/css/normalize.css">
+  <link rel="stylesheet" href="./html/css/foundation.css">
+
+  <script src="./html/js/custom.modernizr.js"></script>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : '562371140470794',                        // App ID from the app dashboard
+      channelUrl : '', // Channel file for x-domain comms
+      status     : true,                                 // Check Facebook Login status
+      xfbml      : true                                  // Look for social plugins on the page
+    });
+    
+		  		  if("{{pool_id}}"!="all"){
+				  	  //$("#uid2").attr("src","./html/images/inviteicon.png");
+					  $("#uid2").click(function(){
+					        FB.ui({method: 'apprequests',
+					            message: window.location.href
+					          },function(response){});
+			  			});
+				        FB.ui({method: 'apprequests',
+				            message: window.location.href
+				          }, function(response){});	  
+			 	  }
+		  	
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+  
+
+  
+</script>
+
+  <div class="row">
+    <div class="large-12 columns">
+ 
+      <!-- Navigation -->
+ 
+        <ul class="button-group">
+          <li><a href="#" class="button">Your Score {{userScore}}</a></li>
+          <li><a href="#" class="button">Challenge players</a></li>
+          <li><a href="#" class="button">About this</a></li>
+        </ul>
+ 
+      <!-- End Navigation -->
+ 
+ 
+      <!-- Header Content -->
+ 
+        <div class="row">
+ 
+          <div class="large-6 columns">
+					<div id="wrapper">
+					</div>
+
+				<div id="debuginfo" style="float:left;height:width:100px;height:200px;overflow:auto;border:1px solid grey;display:none;"></div>
+ 
+          </div>
+ 
+ 
+          <div class="large-6 columns">
+ 
+            <h3 class="show-for-small">Game Rules<hr/></h3>
+ 
+            <div class="panel">
+              <h4 class="hide-for-small">Win the Game<hr/></h4>
+            <h5 class="subheader">
+            	Win three grids on a line to win the game. 	
+            </h5>
+            </div>
+ 
+          <div class="row">
+              <div class="large-6 small-6 columns">
+                <div class="panel">
+                  <h5 id="uid1_name">{{uid}}</h5>
+                  	<h6 class="subheader"><img id="uid1" class="user_pic" src="http://graph.facebook.com/{{uid}}/picture"/></h6>
+                  	
+	                <a id="uid1_link" target="_blank" href="http://www.facebook.com/{{uid}}" class="small button">View Profile</a>
+                </div>
+              </div>
+ 
+              <div class="large-6 small-6 columns">
+                <div class="panel">
+                  <h5 id="uid2_name">waiting....</h5>
+                  <h6 class="subheader"><img id="uid2" class="user_pic" src="./html/images/loading.gif"/></h6>
+             
+                <a href="#" id="uid2_link" target="_blank" class="small button">View Profile</a>
+                </div>
+              </div>
+          </div>
+ 
+          </div>
+ 
+        </div>
+ 
+      <!-- End Header Content -->
+ 
+  
+ 
+      <!-- Footer -->
+ 
+        <footer class="row">
+        <div class="large-12 columns"><hr />
+            <div class="row">
+ 
+              <div class="large-6 columns">
+                  <p>&copy; Copyright no one at all. Go to town.</p>
+              </div>
+ 
+              <div class="large-6 columns">
+                  <ul class="inline-list right">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Game rules</a></li>
+                  </ul>
+              </div>
+ 
+            </div>
+        </div>
+      </footer>
+ 
+      <!-- End Footer -->
+ 
+ 
+    </div>
+  </div>
+  <script>
+  document.write('<script src=./html/js/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="./html/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      $('#featured').orbit({ fluid: '2x1' });
+    });
+  </script>
+  
+<div class="info message">
+		 <p></p>
+</div>
+
+<div class="error message">
+		 <p></p>
+
+</div>
+
+<div class="warning message">
+		 <p></p>
+</div>
+
+<div class="success message">
+		 <p></p>
+</div>
+
+</body>
+<script type="text/javascript" src="./html/js/jquery.blockUI.js"></script>
+
+</html>

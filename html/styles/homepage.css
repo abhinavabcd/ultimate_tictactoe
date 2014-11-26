@@ -1,0 +1,46 @@
+/*
+Responsive Template Name: RS-4 Clean
+File: Homepage CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+#shout{padding:15px 0 0 0;}
+#shout figure{}
+#shout figure div{display:block; float:left; width:45.83333%;}
+#shout figure div img{}
+#shout figure figcaption{display:block; float:right; width:52.08333%; font-size:1.3em; line-height:1.6em;}
+#shout figure figcaption h1{display:inline-block; margin:15% 0 0 0; padding:0; color:#000000; background-color:#FFFFFF; font-size:5em; text-transform:uppercase;}
+#shout figure figcaption p{margin:0 0 15px 0; padding:0;}
+
+#container #homepage{display:block; width:100%; padding:20px 0; line-height:1.6em;}
+
+#container #homepage #latest_work{margin-bottom:50px; padding-bottom:50px; border-bottom:1px solid #ECECEC;}
+#container #homepage #latest_work article{}
+#container #homepage #latest_work article img{margin-bottom:20px;}
+#container #homepage #latest_work article h2, #container #homepage #latest_work article p{margin:0 0 15px 0; padding:0;}
+#container #homepage #latest_work article footer{}
+
+#container #homepage #intro{margin-bottom:0;}
+#container #homepage #intro article{}
+#container #homepage #intro article h2{font-size:2em; margin-bottom:40px;}
+#container #homepage #intro article ul{margin:0; padding:0; list-style:none;}
+#container #homepage #intro article ul li{margin-bottom:40px;}
+#container #homepage #intro article ul li.last{margin-bottom:0;}
+#container #homepage #intro article ul li figure{display:block; width:100%;}
+#container #homepage #intro article ul li figure div{margin-bottom:0;}
+#container #homepage #intro article ul li figure div img{}
+#container #homepage #intro article ul li figure figcaption{}
+#container #homepage #intro article ul li figure figcaption p{}
+#container #homepage #intro article ul li figure figcaption p.name{}
+#container #homepage #intro article ul li figure figcaption footer{}
+
+#container #homepage #intro article ul.testimonials li{background:url("../images/quotemarks.gif") 0 0 no-repeat;}
+#container #homepage #intro article ul.testimonials li p.name{margin:0 0 30px 60px; padding:15px 0 0 0;}
+#container #homepage #intro article ul li blockquote{display:block; margin:0; padding:0; color:inherit; background-color:inherit; font-style:normal; line-height:inherit;}
+#container #homepage #intro article ul li blockquote:before, #container #homepage #intro article ul li blockquote:after{content:inherit;}
+
+
+footer.more{display:inline-block; padding:8px 10px; color:#FFFFFF; background-color:#EC4D48;}
+footer.more a{color:#FFFFFF; background-color:#EC4D48;}

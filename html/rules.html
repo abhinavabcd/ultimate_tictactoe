@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Ultimate Tic-Tac-Toe</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" media="all">
+<script src="scripts/jquery-1.7.2.min.js"></script>
+<script src="scripts/jquery-mobilemenu.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('.topnav').mobileMenu({
+        combine: false,
+        switchWidth: 520,
+		indentString: '&nbsp;&nbsp;&nbsp;',
+        prependTo: 'nav#topnav'
+    });
+});
+</script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="styles/ie.css" type="text/css" media="all">
+<script src="scripts/css3-mediaqueries.min.js"></script>
+<script src="scripts/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+<script src="header.js"></script>
+
+<!-- content -->
+<center style="padding-left:300px;padding-right:300px;text-align:left;">
+<p>As you may have discovered yourself, tic-tac-toe is terminally dull. There's no room for creativity or insight. Good players always tie. Games inevitably go something like this:</p>
+<p style="text-align:center;"><a href="images/rules1.jpg"><img class="aligncenter  wp-image-549" title="Sometimes X starts in the center. Action proceeds similarly. Not a lot going on." alt="" src="images/rules1.jpg" width="584" height="438" /></a></p>
+<p>We present you with a new Ultimate version of Tic-Tac-Toe. In each square of tic-tac-toe board, we have drawn a smaller board:</p>
+<p style="text-align:center;"><a href="images/rules2.jpg"><img class="aligncenter size-medium wp-image-529" title="Beautiful as a blank page." alt="" src="images/rules2.jpg" width="300" height="225" /></a></p>
+<p>The basic rules are:<span id="more-527"></span></p>
+<ol>
+<li>In each turn, you mark one of the small squares.</li><br><a href="images/rules3.jpg"><img class="aligncenter size-medium wp-image-544" title="Played this game with myself. I lost. (And won!)" alt="" src="images/rules3.jpg" width="300" height="225" /></a><br><br>
+<li>When you get three in a row on a small board, you've won that board.</li><br>
+<a href="images/rules4.jpg"><img class="aligncenter" title="Notice the right board, second from the top. Even though O has three-in-a-row, X keeps the board, because it had three-in-a-row first." alt="" src="images/rules4.jpg" width="300" height="225" /></a><br><br>
+<li>To win the game, you need to win three small boards in a row.</li><br>
+<a href="images/rules5.jpg"><img class="aligncenter size-medium wp-image-550" title="Victory!" alt="" src="images/rules5.jpg" width="300" height="225" /></a><br><br>
+</ol>
+<p><b>But, the most important rule in the game is:</b></p>
+<p>You don't get to pick which of the nine boards to play on. That's determined by your opponent's previous move.<b> Whichever <i>square</i> he picks, that's the <i>board</i> you must play in next. </b>(And whichever square <i>you</i> pick will determine which board <i>he</i> plays on next.)</p><br>
+<p>For example, if I go here ...</p>
+<p style="text-align:center;"><a href="images/rules6.jpg"><img class="aligncenter size-medium wp-image-530" title="Not a bad first move. But not my favorite. (See below.)" alt="" src="images/rules6.jpg" width="300" height="225" /></a></p>
+<p>Then your next move must be here ...</p>
+<p style="text-align:center;"><a href="images/rules7.jpg"><img class="aligncenter size-medium wp-image-531" title="Only nine choices. And each has repercussions." alt="" src="images/rules7.jpg" width="300" height="225" /></a></p>
+<p>This lends the game a strategic element. You can't just focus on the little board. You've got to consider where your move will send your opponent, and where his next move will send you, and so on.</p>
+<p>The resulting scenarios look bizarre. Players seem to move randomly, missing easy two- and three-in-a-rows. But there's a method to the madness - they're thinking ahead to future moves, wary of setting up their opponent on prime real estate. It is, in short, vastly more interesting than regular tic-tac-toe.</p>
+<p style="text-align:center;"><a href="images/rules8.jpg"><img class="aligncenter size-medium wp-image-546" title="Take the bottom center board. You might wonder why O would take two squares that don't even connect. But O knows what he's doing." alt="" src="images/rules8.jpg" width="300" height="225" /></a></p>
+<p>A few clarifying rules are necessary:</p>
+<ol>
+<li><i>What if my opponent sends me to a board that's already been won? </i>In that case, congratulations - you get to go anywhere you like, on any of the other boards. (This means you should avoid sending your opponent to an already-won board!)</li><br><br>
+<a href="images/rules9.jpg"><img class="aligncenter size-medium wp-image-543" title="It's often a good idea to send your opponent to a square like this. Not only does it limit the damage they can do, but if often forces them to choose between a few bad moves." alt="" src="images/rules9.jpg" width="300" height="225" /></a><br><br>
+<li><i>What if one of the small boards results in a tie? </i>I recommend that the board counts for <strong>neither</strong> X nor O. But, if you feel like a crazy variant, you could agree before the game to count a tied board for <strong>both</strong> X and O.</li>
+</ol>
+<p>When I see my friends playing tic-tac-toe, I resist the urge to roll my eyes, and I teach them this game instead. You could argue that it builds mathematical skills (deductive reasoning, conditional thinking, the geometric concept of similarity), but who cares? It's a good game in any case.</p>
+<p><span style="font-style:inherit;line-height:1.625;">Anyway, that's Ultimate Tic-Tac-Toe. Go play! Let me know how it goes!</span></p>
+<br>
+<p style="text-align:center;"><em>See Original blog post <a href="http://wp.me/P3gt4l-aQ">Here</a></em></p>
+<!-- end of body  -->
+
+</div>
+
+<!-- End of content -->
+
+<script src="footer.js"></script>
+</body>
+</html>

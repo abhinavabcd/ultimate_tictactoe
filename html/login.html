@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Ultimate Tic-Tac-Toe</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/button.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/login.css" type="text/css" media="all">
+<script src="scripts/jquery-1.7.2.min.js"></script>
+<script src="scripts/jquery-mobilemenu.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('.topnav').mobileMenu({
+        combine: false,
+        switchWidth: 520,
+		indentString: '&nbsp;&nbsp;&nbsp;',
+        prependTo: 'nav#topnav'
+    });
+});
+</script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="styles/ie.css" type="text/css" media="all">
+<script src="scripts/css3-mediaqueries.min.js"></script>
+<script src="scripts/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+<script src="header.js"></script>
+
+<!-- content -->
+
+<br><br><br>
+<center>
+
+<a target="_parent" href="http://tic-tac-toe-multiplayer.com/Login"><img src="images/fb2.png"/></img></a>
+
+<div class="signin_signup_heading_text">
+<span>Sign In or Sign Up</span>
+</br>
+</div>            
+
+<form action="" method="post" accept-charset="utf-8">
+
+<table style="border:0px;">
+<tr>
+<td>Email: </td><td>
+<!--<input type="hidden" name="url" value="https://www.facebook.com/dialog/oauth?client_id=594610940582342&redirect_uri=http%3A%2F%2Fshoppingbaba.in%2Flogin_page%2F1&state=b54ba129c3d22cb34f71309181eeec91&scope=email">-->
+<input type="text" class="forms_email" id="email-text" name="email" value="" /></td></tr>
+<tr><td>Password: </td><td><input type="password" class= "forms_email" id = "email-password" name="pass" autocomplete="off" value="" />
+</td></tr>
+<tr><td></td><td>
+<!--<input type="hidden" name="url_decoded" value= "" >-->
+<button type ="submit" id ="sign_in" value = "Sign in" style="margin-left:0px;margin-top:25px;width:50px;" class="myButton">SIGN IN</button>
+<button type ="submit" id ="sign_up" value = "Sign up" style="margin-left:10px;margin-top:25px;width:50px;" class="myButton"> SIGN UP</button>
+</td></tr></table>
+</form>
+
+</br>
+<span><a style="color:#00C0F2" href="#">Forgot Password ?</a></span>
+<br><br><br><br><br>
+<!-- end of body  -->
+
+</div>
+
+<!-- End of content -->
+
+<script src="footer.js"></script>
+</body>
+</html>

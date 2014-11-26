@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Ultimate Tic-Tac-Toe</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/button.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/login.css" type="text/css" media="all">
+<script src="scripts/jquery-1.7.2.min.js"></script>
+<script src="scripts/jquery-mobilemenu.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('.topnav').mobileMenu({
+        combine: false,
+        switchWidth: 520,
+		indentString: '&nbsp;&nbsp;&nbsp;',
+        prependTo: 'nav#topnav'
+    });
+});
+</script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="styles/ie.css" type="text/css" media="all">
+<script src="scripts/css3-mediaqueries.min.js"></script>
+<script src="scripts/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+<script src="header.js"></script>
+
+<!-- content -->
+<div style="padding-bottom:200px;padding-left:300px;padding-right:300px;">
+<section id="comments">
+<h2>Comments</h2>
+<ul>
+<li class="comment_odd">
+<article>
+<header>
+<figure><img src="images/demo/avatar.gif" width="32" height="32" alt=""></figure>
+<address>
+By <a href="#">A Name</a>
+</address>
+<time datetime="2000-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2000 @08:15:00</time>
+</header>
+<section>
+<p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+</section>
+</article>
+</li>
+<li class="comment_even">
+<article>
+<header>
+<figure><img src="images/demo/avatar.gif" width="32" height="32" alt=""></figure>
+<address>
+By <a href="#">A Name</a>
+</address>
+<time datetime="2000-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2000 @08:15:00</time>
+</header>
+<section>
+<p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+</section>
+</article>
+</li>
+<li class="comment_odd">
+<article>
+<header>
+<figure><img src="images/demo/avatar.gif" width="32" height="32" alt=""></figure>
+<address>
+By <a href="#">A Name</a>
+</address>
+<time datetime="2000-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2000 @08:15:00</time>
+</header>
+<section>
+<p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+</section>
+</article>
+</li>
+</ul>
+</section>
+<div class="signin_signup_heading_text">
+Write A Comment
+</div>
+        <form action="#" method="post">
+          <p>
+            <input class="forms_email" type="text" name="name" id="name" value="" size="22">
+            <label for="name"><small>Name</small></label>
+          </p>
+          <p>
+            <input class="forms_email" type="text" name="email" id="email" value="" size="22">
+            <label for="email"><small>Mail</small></label>
+          </p>
+          <p>
+            <textarea class="forms_email" name="comment" id="comment" cols="50" rows="10"></textarea>
+            <label for="comment" class="hidden"><small>Comment (required)</small></label>
+          </p>
+          <p>
+            <input class="myButton" name="submit" type="submit" id="submit" value="Submit">
+            &nbsp;
+            <input class="myButton" name="reset" type="reset" id="reset" value="Reset">
+          </p>
+        </form>
+
+</div>
+<!-- End of content -->
+
+</div>
+
+<!-- end of body  -->
+
+<script src="footer.js"></script>
+</body>
+</html>

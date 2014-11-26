@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Ultimate Tic-Tac-Toe</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/button.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/login.css" type="text/css" media="all">
+<script src="scripts/jquery-1.7.2.min.js"></script>
+<script src="scripts/jquery-mobilemenu.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('.topnav').mobileMenu({
+        combine: false,
+        switchWidth: 520,
+		indentString: '&nbsp;&nbsp;&nbsp;',
+        prependTo: 'nav#topnav'
+    });
+});
+</script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="styles/ie.css" type="text/css" media="all">
+<script src="scripts/css3-mediaqueries.min.js"></script>
+<script src="scripts/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+<script src="header.js"></script>
+
+<!-- content -->
+<center style="padding-bottom:300px;padding-left:300px;padding-right:300px;text-align:left;">
+<div class="signin_signup_heading_text">
+About Us:
+</div>
+<ul>
+
+<li>We are a team of two from IIIT-H, evolved from Senior-Junior relationship, always interested in building games 
+but never finds time to host the ones we designed.</li><br>
+<li>We also find solutions that simultaneously use both technology and creativity.</li><br>
+<li>Don't believe, what we say :)</li>
+</ul>
+
+
+</center>
+<!-- End of content -->
+
+</div>
+
+<!-- end of body  -->
+
+<script src="footer.js"></script>
+</body>
+</html>

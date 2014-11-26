@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Ultimate Tic-Tac-Toe</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" media="all">
+<script src="scripts/jquery-1.7.2.min.js"></script>
+<script src="scripts/jquery-mobilemenu.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('.topnav').mobileMenu({
+        combine: false,
+        switchWidth: 520,
+		indentString: '&nbsp;&nbsp;&nbsp;',
+        prependTo: 'nav#topnav'
+    });
+});
+</script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="styles/ie.css" type="text/css" media="all">
+<script src="scripts/css3-mediaqueries.min.js"></script>
+<script src="scripts/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+<script src="header.js"></script>
+
+  <section id="shout" class="clear">
+    <figure>
+      <figcaption>
+        <h1>Bored ??</h1>
+        <p>Experience our new Ultimate Tic-Tac-Toe with multiplayer facility. You can play with your friends or in a pool. </p>
+        <footer class="more"><a href="login.html">Play Game &raquo;</a></footer>
+      </figcaption>
+      <div><img src="images/tic1.jpg" alt=""></div>
+    </figure>
+  </section>
+</div>
+<!-- content -->
+<!-- Copyright -->
+<script src="footer.js"></script>
+</body>
+</html>

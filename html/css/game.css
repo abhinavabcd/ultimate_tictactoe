@@ -1,0 +1,64 @@
+* {
+	line-height: none;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+		background: url("./html/images/game_selection_bg.jpg") no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover; 
+		font-family: Helvetica, sans-serif;
+	}
+
+#wrapper{
+ width:470px;
+ margin:0px auto; 
+}
+.strip{
+width:470px;
+height:50px;
+}
+.strip img{
+height:49px;
+}
+
+table.tic_tac_level_2 td{
+	padding:1px;
+}
+table.tic_tac_level_1{
+  width:150px;
+  height:150px;	
+  margin:3px;
+}
+.current_cell{
+	background-color:grey;
+}
+.current_grid{
+	box-shadow: 3px 3px 3px 3px #888888;
+}
+
+table.tic_tac_level_1 td{
+	border:solid 2px #2BA6CB;
+}
+.mark1{
+ background-image:url(../images/o_1.png);
+ background-repeat:  no-repeat;
+}
+.mark2{
+ background-image:url(../images/x_1.png);
+ background-repeat:  no-repeat;
+}
+.user_pic{
+	height:40px;
+	width:40px;
+}
+
+.activePlayer{
+	border:1px solid grey;	
+}
+
+
+

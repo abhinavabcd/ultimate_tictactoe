@@ -1,0 +1,53 @@
+.forms_email
+{
+	font-size: 14px;
+	line-height: 1.428571429;
+color: #555;
+       vertical-align: middle;
+       background-color: white;
+border: 1px solid #ccc;
+	border-radius:4px
+}
+
+.forms_email:focus
+{
+	border-color:#00C0F2;
+outline: 0;
+	 -moz-box-shadow: 0 0 1px #00C0F2;
+	 box-shadow: 0 0 1px #00C0F2;
+}
+
+.signin_signup_heading_text
+{
+height:30px;
+width:100%;
+      font-weight:normal;
+      font-family:'Open Sans',Arial,sans-serif;
+      font-size:17px;
+      margin-top:0px;
+      margin-left:0px;
+      margin-right:0px;
+      padding-top:7px;
+      padding-right:0px;
+      padding-left:0px;
+      padding-bottom:0px;
+color:#079DD3;
+}
+
+
+.email_password_heading_text
+{
+height:30px;
+width:100%;
+      font-family:'Ruda', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size:15px;
+      margin-top:0px;
+      margin-left:0px;
+      margin-right:0px;
+      padding-top:7px;
+      padding-right:0px;
+      padding-left:0px;
+      padding-bottom:0px;
+color:#999;
+}
+
